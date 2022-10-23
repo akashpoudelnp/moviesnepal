@@ -15,7 +15,6 @@ export default function Home() {
         axios.get(API_URL).then((res) => {
             setMovies(res.data.results);
             setLoading(false);
-            console.log(res.data.results);
         });
     }, []);
     return (
