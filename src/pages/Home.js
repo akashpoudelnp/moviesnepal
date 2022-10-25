@@ -30,10 +30,8 @@ export default function Home() {
             </div>
             <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-5 pt-6 ">
                 <button className="rounded-2xl bg-teal-600 flex gap-1 items-center justify-center py-2 text-white">🍿 <span className="pr-3">All</span></button>
-                <button className="rounded-2xl bg-gray-600 flex gap-1 items-center justify-center py-2 text-white">😂 <span className="pr-3">Comedy</span></button>
-                <button className="rounded-2xl bg-gray-600 flex gap-1 items-center justify-center py-2 text-white">🪄 <span className="pr-3">Fantasy</span></button>
-                <button className="rounded-2xl bg-gray-600 flex gap-1 items-center justify-center py-2 text-white">🎭<span className="pr-3">Drama</span></button>
-                <button className="rounded-2xl bg-gray-600 flex gap-1 items-center justify-center py-2 text-white">👻 <span className="pr-3">Horror</span></button>
+                <button className="rounded-2xl bg-gray-600 flex gap-1 items-center justify-center py-2 text-white">🎞️ <span className="pr-3">Movies</span></button>
+                <button className="rounded-2xl bg-gray-600 flex gap-1 items-center justify-center py-2 text-white">📺 <span className="pr-3">TV</span></button>
             </div>
             {loading && <Loading />}
             <div className="pt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2">
