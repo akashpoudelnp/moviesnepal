@@ -2,7 +2,7 @@ import axios from 'axios';
 import React from 'react'
 import { useEffect } from 'react';
 import { useState } from 'react'
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import Error from '../components/Error';
 import Layout from '../components/Layout'
 import Loading from '../components/Loading';
@@ -29,7 +29,15 @@ export default function ShowTv(props) {
     return (
         <Layout page="home">
             {loading && <Loading />}
+            <div className='flex justify-between items-center'>
+                <Link to={'/'}>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 text-white">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M9 15L3 9m0 0l6-6M3 9h12a6 6 0 010 12h-3" />
+                    </svg>
+                </Link>
+            </div>
             {error && <Error />}
+
             {series.id &&
                 <div>
                     <div className="grid grid-cols-1 lg:grid-cols-2 lg:justify-items-end items-center justify-center ">
